@@ -24,7 +24,7 @@ function showData(){
     todobody.innerHTML = ''
     let tasks = ''
     for (let i = 0 ; i < todolist.length; i++) {
-        tasks += `<p class="tasknum${i}"><input onclick="ifCheck(${i})" class="btn" type="checkbox"><span>${todolist[i]}</span><img onclick="deleteTask(${i})" src="/images/icons8-effacer.svg" alt=""><img class="edit" onclick="edit(${i})" src="/images/icons8-edit-24.png" alt=""></p>`
+        tasks += `<p class="tasknum${i}"><input onclick="ifCheck(${i})" class="btn" type="checkbox"><span>${todolist[i]}</span><img onclick="deleteTask(${i})" src="/images/icons8-effacer.svg" alt=""><img class="edit" onclick="edit(${i})" src="" alt=""></p>`
         todobody.innerHTML = tasks
     }
     if(todobody.innerHTML === ''){
